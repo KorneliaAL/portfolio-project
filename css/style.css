@@ -60,6 +60,16 @@ p {
 .project-description {
   padding: 120px 30px;
 }
+.navbar-homepage {
+  background-color: var(--primary-color);
+  padding: 30px 50px;
+}
+.navbar-links {
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
 @media (max-width: 991px) {
   h1 {
     font-size: 44px;
