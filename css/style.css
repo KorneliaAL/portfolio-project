@@ -1,21 +1,38 @@
 :root {
-  --primary-color: #f9f7fe;
-  --secondary-color: #6c63ff;
+  --primary-color: #ebf7fd;
+  --secondary-color: #2d767f;
 }
 body {
   font-family: "Poppins", sans-serif;
 }
-h1 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "Playfair Display", serif;
+}
+h1 {
   font-size: 96px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 64px;
 }
 p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 30px;
+}
+.header-hero p {
   font-size: 36px;
   font-weight: bold;
 }
 .header-hero h2 {
   color: #272142;
   font-weight: normal;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
 }
 .header-hero {
   background-color: var(--primary-color);
@@ -30,4 +47,36 @@ p {
   font-size: 18px;
   border-radius: 4px;
   line-height: 27px;
+}
+.btn-branding-outland {
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  padding: 18px 30px;
+  font-weight: normal;
+  font-size: 18px;
+  border-radius: 4px;
+  line-height: 27px;
+}
+.project-description {
+  padding: 120px 30px;
+}
+@media (max-width: 991px) {
+  h1 {
+    font-size: 44px;
+  }
+  h2 {
+    font-size: 44px;
+  }
+  .header-hero p {
+    font-size: 28px;
+  }
+  .project-description {
+    text-align: center;
+    padding: 0;
+  }
+
+  .header-hero {
+    background-color: var(--primary-color);
+    padding: 80px 20px;
+  }
 }
