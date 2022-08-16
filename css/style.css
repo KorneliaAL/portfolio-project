@@ -66,7 +66,7 @@ p {
   background-color: var(--primary-color);
 }
 .navbar-all {
-  padding: 30px 50px;
+  padding: 30px 50px 0;
 }
 .navbar-links {
   margin: 0 10px;
@@ -103,68 +103,70 @@ p {
   opacity: 0.7;
   font-weight: 500;
 }
-.about-section h1 {
+.content-container h1 {
   font-size: 64px;
   line-height: 80px;
 }
-.about-section h2 {
+.content-container h2 {
   font-family: var(--default-font-family);
   font-size: 18px;
   font-weight: 700;
 }
-.about-section img {
-  width: 390px;
-  height: 525px;
-  margin-left: 115px;
+.content-container .hero-img {
+  margin-left: 40px;
 }
-.about-section p {
+.content-container p {
   opacity: 0.7;
 }
-.about-section {
+.content-container {
   padding: 0 40px;
 }
-.about-section .about-content {
-  padding-top: 65px;
+.content {
+  padding: 60px 0;
+}
+.img-knitting {
+  max-height: 575px;
 }
 @media (max-width: 991px) {
   h1 {
     font-size: 44px;
   }
   h2 {
-    font-size: 44px;
+    font-size: 40px;
   }
   .header-hero p {
     font-size: 28px;
   }
   .project-description {
-    text-align: center;
     padding: 0;
   }
-
-  .header-hero {
-    background-color: var(--primary-color);
-    padding: 80px 20px;
+  .header-content {
+    padding: 70px 20px;
   }
   .work-info {
     margin: 50px auto;
     margin-top: 70px;
     padding: 15px 25px;
   }
-  .work-info h2 {
-    font-size: 40px;
+  .work-info h2,
+  .content,
+  .project-description {
     text-align: center;
   }
 
   .work-info .btn-branding {
     display: block;
-    text-align: center;
     width: 150px;
     margin: 0 auto;
     padding: 15px 25px;
-    font-weight: normal;
     font-size: 14px;
   }
-  .about-content {
+  .content-container .hero-img {
+    margin-left: 0;
+  }
+  .content-container h1 {
+    font-size: 44px;
+    line-height: 1.5;
     text-align: center;
   }
 }
