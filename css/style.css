@@ -66,10 +66,17 @@ p {
 .navbar-all {
   padding: 30px 50px 0;
 }
-.navbar-links {
+nav ul li a.navbar-links {
   margin: 0 10px;
   font-size: 16px;
   font-weight: normal;
+  transition: all 100ms ease-in-out;
+}
+.active {
+  color: var(--secondary-color) !important;
+}
+nav ul li a.navbar-links:hover {
+  color: var(--secondary-color);
 }
 .icon-social-media {
   width: 15px;
