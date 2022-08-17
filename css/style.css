@@ -47,6 +47,11 @@ p {
   font-size: 18px;
   border-radius: 4px;
   line-height: 27px;
+  transition: all 150ms ease-in-out;
+}
+.btn-branding:hover {
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
 }
 .btn-branding-outland {
   color: var(--secondary-color);
@@ -56,6 +61,11 @@ p {
   font-size: 18px;
   border-radius: 4px;
   line-height: 27px;
+  transition: all 150ms ease-in-out;
+}
+.btn-branding-outland:hover {
+  color: white;
+  background-color: var(--secondary-color);
 }
 .project-description {
   padding: 120px 30px;
@@ -78,32 +88,43 @@ nav ul li a.navbar-links {
 nav ul li a.navbar-links:hover {
   color: var(--secondary-color);
 }
-.icon-social-media {
-  width: 15px;
-  color: var(--secondary-color);
+footer p a {
+  text-decoration: none;
+  color: black;
+  transition: all 100ms ease-in-out;
 }
-.icon {
+footer p a:hover {
+  color: #2d767f;
+}
+footer a.icon {
+  font-size: 18px;
+  color: var(--secondary-color);
   background-color: var(--primary-color);
   border-radius: 50%;
   margin: 10px;
-  padding: 12px 4px;
+  padding: 9px 0;
+  transition: all 100ms ease-in-out;
 }
-.work-info {
+footer a.icon:hover {
+  color: white;
+  background-color: var(--secondary-color);
+}
+footer .work-info {
   border-radius: 20px;
   background-color: var(--primary-color);
   padding: 30px 50px;
   margin-top: 130px;
   margin-bottom: 60px;
 }
-.work-info h2 {
+footer .work-info h2 {
   font-size: 48px;
 }
-.work-info .btn-branding {
+footer .work-info .btn-branding {
   margin-left: 200px;
   margin-top: 25px;
   width: 200px;
 }
-.work-info p {
+footer .work-info p {
   font-size: 18px;
   opacity: 0.7;
   font-weight: 500;
